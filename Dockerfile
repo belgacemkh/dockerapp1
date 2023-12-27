@@ -11,6 +11,6 @@ ENTRYPOINT /usr/sbin/apache2ctl -D FOREGROUND
 # Renommage du fichier de base d'apache2 index.html vers index.html.old
 RUN mv /var/www/html/index.html /var/www/html/index.html.old 
 # Récupération de mon repository Git avec le mini projet
-RUN git clone https://github.com/archidote/get-ready-simple-countdown-html-css-js 
+RUN git clone https://github.com/belgacemkh/dockerapp1 
 # Copie des fichiers du mini projet web vers la racine de mon serveur web
-RUN cd get-ready-simple-countdown-html-css-js && cp * /var/www/html/
+RUN cd dockerapp1 && cp * /var/www/html/
